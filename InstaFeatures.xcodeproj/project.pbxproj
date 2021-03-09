@@ -22,6 +22,7 @@
 		41337F0525F788EE006B104B /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41337F0425F788EE006B104B /* DatabaseManager.swift */; };
 		41337F0A25F7895D006B104B /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41337F0925F7895D006B104B /* AuthManager.swift */; };
 		41337F0F25F7899F006B104B /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41337F0E25F7899F006B104B /* StoreManager.swift */; };
+		41337F2D25F7F4CF006B104B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41337F2C25F7F4CF006B104B /* UIView.swift */; };
 		4166DB1325F77B7400C9C14E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4166DB1225F77B7400C9C14E /* AppDelegate.swift */; };
 		4166DB1525F77B7400C9C14E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4166DB1425F77B7400C9C14E /* SceneDelegate.swift */; };
 		4166DB1A25F77B7400C9C14E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4166DB1825F77B7400C9C14E /* Main.storyboard */; };
@@ -71,6 +72,7 @@
 		41337F0425F788EE006B104B /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		41337F0925F7895D006B104B /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		41337F0E25F7899F006B104B /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		41337F2C25F7F4CF006B104B /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		4166DB0F25F77B7400C9C14E /* InstaFeatures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaFeatures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4166DB1225F77B7400C9C14E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4166DB1425F77B7400C9C14E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +178,23 @@
 			path = Generals;
 			sourceTree = "<group>";
 		};
+		41337F2B25F7F4C4006B104B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				41337F2C25F7F4CF006B104B /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		41337F3125F7F8A8006B104B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4166DB1825F77B7400C9C14E /* Main.storyboard */,
+				4166DB2025F77B7500C9C14E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		4166DB0625F77B7400C9C14E = {
 			isa = PBXGroup;
 			children = (
@@ -241,9 +260,8 @@
 		4166DB4A25F77C1800C9C14E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4166DB1825F77B7400C9C14E /* Main.storyboard */,
 				4166DB1E25F77B7500C9C14E /* Assets.xcassets */,
-				4166DB2025F77B7500C9C14E /* LaunchScreen.storyboard */,
+				41337F3125F7F8A8006B104B /* Storyboards */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -258,6 +276,7 @@
 		4166DB4C25F77C1C00C9C14E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				41337F2B25F7F4C4006B104B /* Extensions */,
 				4166DB1225F77B7400C9C14E /* AppDelegate.swift */,
 				41337EC225F784A5006B104B /* GoogleService-Info.plist */,
 				4166DB1425F77B7400C9C14E /* SceneDelegate.swift */,
@@ -530,6 +549,7 @@
 			files = (
 				41337EDB25F78676006B104B /* EditProfileViewController.swift in Sources */,
 				41337ED625F78572006B104B /* PostViewController.swift in Sources */,
+				41337F2D25F7F4CF006B104B /* UIView.swift in Sources */,
 				4166DB5025F77C9B00C9C14E /* HomeViewController.swift in Sources */,
 				4166DB1D25F77B7400C9C14E /* InstaFeatures.xcdatamodeld in Sources */,
 				4166DB5F25F77CBD00C9C14E /* NotificationViewController.swift in Sources */,
@@ -728,6 +748,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CPDNCAZJQ6;
 				INFOPLIST_FILE = InstaFeatures/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -748,6 +769,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CPDNCAZJQ6;
 				INFOPLIST_FILE = InstaFeatures/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
