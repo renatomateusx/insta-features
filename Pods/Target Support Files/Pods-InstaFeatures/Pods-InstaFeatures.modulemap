@@ -1,0 +1,6 @@
+framework module Pods_InstaFeatures {
+  umbrella header "Pods-InstaFeatures-umbrella.h"
+
+  export *
+  module * { export * }
+}
