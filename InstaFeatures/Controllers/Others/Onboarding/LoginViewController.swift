@@ -147,8 +147,27 @@ class LoginViewController: UIViewController {
         userNameEmailField.resignFirstResponder()
         guard let userNameEmail = userNameEmailField.text, !userNameEmail.isEmpty, let password = passwordField.text, !password.isEmpty, password.count >= 8 else {return}
         
-        //login func
-
+        //MARK: Login Functionality
+        var username: String?
+        var email: String?
+        if userNameEmail.isEmail() {
+            email = userNameEmail
+        }else{
+            username = userNameEmail
+        }
+        AuthManager.shared.login(username: username, email: email, password: password) { logged in
+            DispatchQueue.main.async {
+                if logged {
+                    self.dismiss(animated: true, completion: nil)
+                }
+                else {
+                    let alert = UIAlertController(title: "Log In Error", message: "We were unable to log you in", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                    self.present(alert, animated: true)
+                }
+            }
+            
+        }
     }
     @objc private func didTapTermsButton(){
         guard let url = URL(string: "https://help.instagram.com/581066165581870?helpref=page_content") else {return}

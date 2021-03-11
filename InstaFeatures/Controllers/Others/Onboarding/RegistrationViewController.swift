@@ -70,6 +70,13 @@ class RegistrationViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         return button
     }()
+    
+    private let headerView: UIView = {
+        let header = UIView()
+        header.clipsToBounds = true
+        return header
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -84,19 +91,26 @@ class RegistrationViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-      
-        
-        userNameField.frame = CGRect(x: 25, y: view.safeAreaInsets.top
-                                        + 60, width: view.width - 50, height: 52.0)
+        headerView.frame = CGRect(x: 0, y: view.safeAreaInsets.top, width: view.width, height: view.height / 3.0)
+        userNameField.frame = CGRect(x: 25, y: headerView.bottom + 40, width: view.width - 50, height: 52.0)
         userEmailField.frame = CGRect(x: 25, y: userNameField.bottom + 10, width: view.width - 50, height: 52.0)
         passwordField.frame = CGRect(x: 25, y: userEmailField.bottom + 10, width: view.width - 50, height: 52.0)
-        
         registerButton.frame = CGRect(x: 25, y: passwordField.bottom + 10, width: view.width - 50, height: 52.0)
-        
-        
+        configureHeaderView()
      }
     
+    private func configureHeaderView(){
+        guard headerView.subviews.count == 0 else {return}
+       
+        //Insta Logo
+        let imageView = UIImageView(image: UIImage(named: "instaLogo2"))
+        headerView.addSubview(imageView)
+        imageView.contentMode = .scaleAspectFit
+        imageView.frame = CGRect(x: headerView.width/4.0, y: view.safeAreaInsets.top, width: headerView.width / 2, height: headerView.height - view.safeAreaInsets.top)
+    }
+    
     private func addSubViews(){
+        view.addSubview(headerView)
         view.addSubview(userNameField)
         view.addSubview(userEmailField)
         view.addSubview(passwordField)
@@ -110,7 +124,15 @@ class RegistrationViewController: UIViewController {
         guard let userName = userNameField.text, !userName.isEmpty, let userEmail = userEmailField.text, !userEmail.isEmpty, let password = passwordField.text, !password.isEmpty, password.count >= 8 else {return}
         
         //create account func
-
+        AuthManager.shared.registerNewUser(with: userName, email: userEmail, password: password) { registered in
+            DispatchQueue.main.async {
+                if registered {
+                    // good to go ahead
+                }else{
+                    // failed
+                }
+            }
+        }
     }
 }
 
