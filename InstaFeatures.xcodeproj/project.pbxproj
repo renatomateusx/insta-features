@@ -27,6 +27,7 @@
 		415B3EEC25FB76C70030F59E /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415B3EEB25FB76C70030F59E /* PhotoCollectionViewCell.swift */; };
 		415B3EF225FB77220030F59E /* ProfileInfoHeaderReusableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415B3EF125FB77220030F59E /* ProfileInfoHeaderReusableViewCell.swift */; };
 		415B3EFA25FB77680030F59E /* ProfileTabsHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415B3EF925FB77680030F59E /* ProfileTabsHeaderReusableView.swift */; };
+		415B3F1825FBB9140030F59E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415B3F1725FBB9140030F59E /* Models.swift */; };
 		4166DB1325F77B7400C9C14E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4166DB1225F77B7400C9C14E /* AppDelegate.swift */; };
 		4166DB1525F77B7400C9C14E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4166DB1425F77B7400C9C14E /* SceneDelegate.swift */; };
 		4166DB1A25F77B7400C9C14E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4166DB1825F77B7400C9C14E /* Main.storyboard */; };
@@ -86,6 +87,7 @@
 		415B3EEB25FB76C70030F59E /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		415B3EF125FB77220030F59E /* ProfileInfoHeaderReusableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderReusableViewCell.swift; sourceTree = "<group>"; };
 		415B3EF925FB77680030F59E /* ProfileTabsHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsHeaderReusableView.swift; sourceTree = "<group>"; };
+		415B3F1725FBB9140030F59E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		4166DB0F25F77B7400C9C14E /* InstaFeatures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaFeatures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4166DB1225F77B7400C9C14E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4166DB1425F77B7400C9C14E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 		4166DB4B25F77C1A00C9C14E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				415B3F1725FBB9140030F59E /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -609,6 +612,7 @@
 				4166DB5F25F77CBD00C9C14E /* NotificationViewController.swift in Sources */,
 				41EE2AF725FAB81B00D30B87 /* IGPostGeneralViewCell.swift in Sources */,
 				41337ED125F78564006B104B /* RegistrationViewController.swift in Sources */,
+				415B3F1825FBB9140030F59E /* Models.swift in Sources */,
 				4166DB5525F77CA700C9C14E /* ExploreViewController.swift in Sources */,
 				41337EF925F786CB006B104B /* PublishPostViewController.swift in Sources */,
 				41EE2AE425FAB67C00D30B87 /* IGFeedViewCell.swift in Sources */,
