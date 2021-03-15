@@ -22,7 +22,7 @@ class ProfileInfoHeaderReusableViewCell: UICollectionReusableView {
     
     private let profilePhotoImage: UIImageView = {
         let image = UIImageView()
-        image.backgroundColor = .systemBackground
+        image.backgroundColor = .secondarySystemBackground
         image.layer.masksToBounds = true
         return image
     }()
