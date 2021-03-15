@@ -8,8 +8,9 @@
 import Foundation
 import UIKit
 
-public enum UserPostType {
-    case photo, video
+public enum UserPostType: String {
+    case photo = "Photo"
+    case video = "Video"
 }
 
 public struct UserPost {
@@ -21,7 +22,8 @@ public struct UserPost {
     let likeCount: [PostLike]
     let comments: [PostComment]
     let createdDate: Date
-    let taggedUsers: [User]
+    let taggedUsers: [String]
+    let owner: User
 }
 
 struct PostLike{
@@ -98,4 +100,23 @@ struct UserNotification {
     let type: UserNotificationType
     let text: String
     let user: User
+}
+
+enum PostRenderType {
+    case header(provider: User)
+    case primaryContent(provider: UserPost)
+    case actions(provider: String)
+    case comments(comments: [PostComment])
+}
+
+struct PostRenderViewModel {
+    let renderType: PostRenderType
+}
+
+
+struct HomeFeedRenderViewModel {
+    let header: PostRenderViewModel
+    let post: PostRenderViewModel
+    let actions: PostRenderViewModel
+    let comments: PostRenderViewModel
 }

@@ -55,7 +55,7 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
                             )
             
             
-            let post = UserPost(identifier: "", postType: .photo, thumbnailImage: URL(string: "https://www.google.com/")!, postURL: URL(string: "https://www.google.com/")!, caption: nil, likeCount: [], comments: [], createdDate: Date(), taggedUsers: [])
+            let post = UserPost(identifier: "", postType: .photo, thumbnailImage: URL(string: "https://www.google.com/")!, postURL: URL(string: "https://www.google.com/")!, caption: nil, likeCount: [], comments: [], createdDate: Date(), taggedUsers: [], owner: user)
             
             let model = UserNotification(type: x % 2 == 0 ? .like(post: post) : .follow(state: .not_following), text: "@therock followed you", user: user)
             
@@ -113,6 +113,17 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
 extension NotificationViewController: NotificationLikeEventTableViewCellDelegate {
     func didTapRelatedPostButton(model: UserNotification) {
         print("Tapped Post Button")
+        switch model.type {
+        case .like(let post):
+            let vc = PostViewController(model: post)
+            vc.title = post.postType.rawValue
+            vc.navigationItem.largeTitleDisplayMode = .never
+            navigationController?.pushViewController(vc, animated: true)
+        case .follow(_):
+            fatalError("Dev Issue: Should never been called")
+        }
+        
+       
     }
 }
 
