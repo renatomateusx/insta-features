@@ -16,11 +16,7 @@ final class ProfileTabsHeaderReusableView: UICollectionReusableView {
     static let identifier = "ProfileTabsHeaderReusableView"
     
     public weak var delegate: ProfileTabsCollectionReusableViewDelegate?
-    
-    struct Constants  {
-        static let padding: CGFloat = 8
-    }
-    
+ 
     private let gridButton: UIButton = {
        let button = UIButton()
         button.clipsToBounds = true

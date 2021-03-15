@@ -7,10 +7,7 @@
 import SafariServices
 import UIKit
 
-struct SettingCellModel {
-    let title: String
-    let handler: (() -> Void)
-}
+
 
 /// View Controller which shows user settings
 class SettingsViewController: UIViewController {

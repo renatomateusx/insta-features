@@ -9,9 +9,6 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    struct Constants {
-        static let cornerRadius: CGFloat = 8.0
-    }
     
     private let userNameEmailField: UITextField = {
         let field = UITextField()
