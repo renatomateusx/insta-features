@@ -28,7 +28,7 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     }
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.backgroundColor = .secondarySystemBackground
+        contentView.backgroundColor = .systemBackground
         contentView.addSubview(photoImage)
         contentView.clipsToBounds = true
         accessibilityLabel = "User Post Image"
@@ -42,9 +42,10 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     public func configure(with model: UserPost){
         let url = model.thumbnailImage
         photoImage.sd_setImage(with: url, completed: nil)
+       
     }
     public func configure(debug imageName: String){
-        photoImage.image = UIImage(named: imageName)
+        photoImage.image = UIImage(named: "mountain")
     }
     
 }

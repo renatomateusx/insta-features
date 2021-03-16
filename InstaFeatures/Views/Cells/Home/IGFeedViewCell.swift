@@ -35,7 +35,7 @@ final class IGFeedViewCell: UITableViewCell {
     }
     
     public func configure(with post: UserPost){
-        postImageView.image = UIImage(named: "gradient")
+        postImageView.image = UIImage(named: "mountain")
         
         return
         switch post.postType {

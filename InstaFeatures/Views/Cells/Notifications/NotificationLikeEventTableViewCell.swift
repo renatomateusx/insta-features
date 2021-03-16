@@ -37,7 +37,7 @@ class NotificationLikeEventTableViewCell: UITableViewCell {
     
     private let postButton: UIButton = {
         let button = UIButton()
-        button.setBackgroundImage(UIImage(named: "gradient"), for: .normal)
+        button.setBackgroundImage(UIImage(named: "mountain"), for: .normal)
         return button
     }()
     
