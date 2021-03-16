@@ -116,5 +116,69 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96F48638-6C4D-4967-B381-27AC84C692BF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InstaFeatures/Controllers/Core Tabs/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
+            landmarkName = "didTapMoreButton()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C354E7FB-57F3-4DAD-9C32-A51907C1CED2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InstaFeatures/Controllers/Core Tabs/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
+            landmarkName = "didTapMoreButton()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C354E7FB-57F3-4DAD-9C32-A51907C1CED2 - 2df26f8e15a46857"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InstaFeatures.HomeViewController.didTapMoreButton() -&gt; ()"
+                  moduleName = "InstaFeatures"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renatomateus/Documents/ios-projects/InstaFeatures/InstaFeatures/Controllers/Core%20Tabs/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "214"
+                  endingLineNumber = "214"
+                  offsetFromSymbolStart = "130">
+               </Location>
+               <Location
+                  uuid = "C354E7FB-57F3-4DAD-9C32-A51907C1CED2 - 3a62a21f8d6e4047"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIAlertAction) -&gt; () in InstaFeatures.HomeViewController.didTapMoreButton() -&gt; ()"
+                  moduleName = "InstaFeatures"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renatomateus/Documents/ios-projects/InstaFeatures/InstaFeatures/Controllers/Core%20Tabs/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "214"
+                  endingLineNumber = "214"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
